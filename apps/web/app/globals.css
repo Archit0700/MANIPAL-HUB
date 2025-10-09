@@ -1,0 +1,74 @@
+:root {
+  color-scheme: only dark;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+html {
+  background-color: #0f172a;
+}
+
+.app-body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 40%, #0f172a 100%);
+  color: #e2e8f0;
+}
+
+.app-body a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-body h1,
+.app-body h2,
+.app-body h3,
+.app-body h4 {
+  color: #f8fafc;
+  margin: 0 0 0.75rem;
+}
+
+.app-body p {
+  color: rgba(226, 232, 240, 0.78);
+}
+
+.app-body main {
+  display: block;
+}
+
+.app-body .container {
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.app-body .card-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.app-body .card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.app-body .card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(94, 234, 212, 0.5);
+}
+
+.app-body .chip {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.15);
+  color: rgba(125, 211, 252, 1);
+  font-size: 0.75rem;
+  margin-right: 0.35rem;
+}
